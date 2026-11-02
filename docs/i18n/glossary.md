@@ -35,6 +35,32 @@ DNA、RNA、ORF、EMBL、GenBank、FASTA、IUPAC、PCR、CpG、GRAVY、SMS3，�
 | browser compatibility | 浏览器兼容性 | |
 | mirror this site | 镜像本站 | |
 | off-line | 离线 | |
+| residue | 残基 | 蛋白质/核酸单体单位；不要写“残基基团” |
+| base | 碱基 | |
+| strand | 链 | direct / reverse strand → 正向链 / 反向链 |
+| open reading frame | 开放阅读框 | ORF 本身保留 |
+| start codon / stop codon | 起始密码子 / 终止密码子 | |
+| synonymous codon | 同义密码子 | |
+| genetic code | 遗传密码 | 页面标题 Genetic codes → 遗传密码表 |
+| codon usage table | 密码子使用表 | |
+| consensus sequence | 共有序列 | |
+| degenerate / degeneracy | 简并 / 简并度 | |
+| amino acid | 氨基酸 | |
+| hydropathy / GRAVY | 疏水性 / 总平均疏水性 (GRAVY) | |
+| epitope / fusion protein | 表位 / 融合蛋白 | |
+| restriction endonuclease | 限制性内切酶 | |
+| feature table | 特征表 | |
+| intron | 内含子 | |
+| site-directed mutagenesis | 定点突变 | |
+| melting temperature | 解链温度 | |
+| scoring matrix | 打分矩阵 | |
+| score / penalty | 分值 / 罚分 | |
+| hit | 命中 | 搜索结果条目 |
+| mismatch / gap | 错配 / 空位 | |
+| guide sequence | 引导序列 | Sample 类程序的来源序列 |
+| numbering | 编号 | |
+| group size | 分组大小 | |
+| window | 窗口 | 滑动窗口 |
 
 ## 其余页面接入步骤
 
@@ -44,3 +70,5 @@ DNA、RNA、ORF、EMBL、GenBank、FASTA、IUPAC、PCR、CpG、GRAVY、SMS3，�
 4. 打开页面点 `中文` 核对，再点 `EN` 确认与原文逐字一致。
 
 `docs/gnu_license.html` 的许可证正文不翻译；`<textarea>` 内的示例序列不翻译。
+
+等宽数据块（`<pre>`、`p.pre_small` 中的遗传密码表、IUPAC 查找表、酶切位点列表）保留英文原文：插入中文会破坏列对齐，且这些内容属于数据而非界面文案。
