@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/stylesheet.css" type="text/css" />
   </head>
 
-  <body class="main" onload="document.main_form.main_submit.focus()">
+  <body class="main">
     <!-- MAIN TABLE -->
 
     <table border="0" cellspacing="2" cellpadding="2">
@@ -351,6 +351,7 @@
           <!-- PROGRAM CONTENT -->
 
           <td class="program">
+            <div class="i18n-switch"></div>
             <table
               width="550"
               border="0"
@@ -408,7 +409,8 @@
 
                       <li>
                         To represent a completely variable residue in a pattern,
-                        use the <b>.</b> character. The following pattern will
+                        use the <b class="i18n-literal">.</b> character. The
+                        following pattern will
                         find all occurrences of <b>GCA</b> followed by any
                         single residue, followed by <b>TTT</b>:
 
@@ -567,5 +569,11 @@
         </tr>
       </tbody>
     </table>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="scripts/i18n.zh.js"
+    ></script>
+    <script type="text/javascript" src="scripts/i18n.js"></script>
   </body>
 </html>

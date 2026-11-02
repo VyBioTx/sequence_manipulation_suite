@@ -141,9 +141,7 @@ window.SMS_I18N_ZH = {
   "mirror this page": "镜像本页面",
   "or": "或",
   "use it off-line": "离线使用",
-
   // ---- stage 2A: pages translated below this line ----
-
   // Shared page furniture
   "Sequence Manipulation Suite 3 (SMS3)":
     "序列操作套件 3（SMS3）",
@@ -219,8 +217,6 @@ window.SMS_I18N_ZH = {
     "文字",
   "Percentage of sequences that must agree for identity or similarity coloring to be added:":
     "添加一致性或相似性着色所需的最小序列一致比例：",
-  "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 100,000,000 characters.":
-    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 100,000,000 个字符。",
   "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 1,000,000,000 characters.":
     "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 1,000,000,000 个字符。",
   "Paste the text into the text area below. Input limit is 500,000,000 characters.":
@@ -259,7 +255,6 @@ window.SMS_I18N_ZH = {
     "报告得分最高的前",
   "hits.":
     "个命中。",
-
   // about.html, acknowledgments.html, browser_compat.html
   "About":
     "关于",
@@ -275,7 +270,6 @@ window.SMS_I18N_ZH = {
     "序列操作套件使用 JavaScript 1.5 编写，这是一种轻量级、跨平台、面向对象的脚本语言。JavaScript 现已由 ECMA（欧洲计算机制造商协会）标准化，ECMA 标准的第一版记录在 ECMA-262 规范中。ECMA-262 标准也已由 ISO（国际标准化组织）批准为 ISO-16262。JavaScript 1.5 完全兼容 ECMA-262 第 3 版。",
   "The Sequence Manipulation Suite requires a web browser that supports JavaScript version 1.5 or higher.":
     "序列操作套件需要支持 JavaScript 1.5 或更高版本的网页浏览器。",
-
   // combine_fasta.html
   "Combine FASTA":
     "合并 FASTA",
@@ -283,7 +277,6 @@ window.SMS_I18N_ZH = {
     "合并 FASTA 可将多条 FASTA 序列记录合并为一条序列。例如，当您想用只接受单条序列输入的程序确定一组序列的密码子使用情况时，可使用合并 FASTA。",
   "Paste the FASTA sequences into the text area below. Input limit is 500,000,000 characters.":
     "请将 FASTA 序列粘贴到下面的文本框中。输入上限为 500,000,000 个字符。",
-
   // embl_fasta.html, embl_feat.html, embl_trans.html
   "EMBL to FASTA":
     "EMBL 转 FASTA",
@@ -297,7 +290,6 @@ window.SMS_I18N_ZH = {
     "EMBL 翻译提取",
   "EMBL Trans Extractor accepts an EMBL file as input and returns each of the protein translations described in the file in FASTA format. EMBL Trans Extractor can be used when you are more interested in the predicted protein translations of a DNA sequence than the DNA sequence itself.":
     "EMBL 翻译提取接受一个 EMBL 文件作为输入，以 FASTA 格式返回文件中描述的各个蛋白质翻译结果。当您更关注 DNA 序列的预测蛋白质翻译而非 DNA 序列本身时，可使用 EMBL 翻译提取。",
-
   // genbank_fasta.html, genbank_feat.html, genbank_trans.html
   "GenBank to FASTA":
     "GenBank 转 FASTA",
@@ -313,7 +305,6 @@ window.SMS_I18N_ZH = {
     "GenBank 翻译提取",
   "GenBank Trans Extractor accepts a GenBank file as input and returns each of the protein translations described in the file in FASTA format. GenBank Trans Extractor should be used when you are more interested in the predicted protein translations of a DNA sequence than the DNA sequence itself.":
     "GenBank 翻译提取接受一个 GenBank 文件作为输入，以 FASTA 格式返回文件中描述的各个蛋白质翻译结果。当您更关注 DNA 序列的预测蛋白质翻译而非 DNA 序列本身时，应使用 GenBank 翻译提取。",
-
   // one_to_three.html
   "One To Three":
     "单字母转三字母",
@@ -321,7 +312,6 @@ window.SMS_I18N_ZH = {
     "单字母转三字母",
   "One to Three converts single letter translations to three letter translations.":
     "单字母转三字母可将单字母表示的翻译结果转换为三字母表示。",
-
   // dna_stats.html
   "DNA Stats":
     "DNA 统计",
@@ -329,7 +319,6 @@ window.SMS_I18N_ZH = {
     "DNA 统计返回您所输入序列中每种残基出现的次数，并给出每种残基以及若干残基组合的百分比合计，便于您快速比较不同序列的结果。",
   "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 500,000,000 characters.":
     "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 500,000,000 个字符。",
-
   // cpg_islands.html
   "CpG Islands":
     "CpG 岛",
@@ -337,7 +326,6 @@ window.SMS_I18N_ZH = {
     "CpG 岛使用以下文献描述的方法报告可能的 CpG 岛区域：",
   ". The calculation is performed using a 200 bp window moving across the sequence at 1 bp intervals. CpG islands are defined as sequence ranges where the Obs/Exp value is greater than 0.6 and the GC content is greater than 50%. The expected number of CpG dimers in a window is calculated as the number of 'C's in the window multiplied by the number of 'G's in the window, divided by the window length. CpG islands are often found in the 5' regions of vertebrate genes, therefore this program can be used to highlight potential genes in genomic sequences.":
     "。计算使用 200 bp 的窗口，以 1 bp 为步长沿序列滑动。CpG 岛定义为 Obs/Exp 值大于 0.6 且 GC 含量大于 50% 的序列区段。窗口中 CpG 二聚体的期望数目按下式计算：窗口中 'C' 的数目乘以窗口中 'G' 的数目，再除以窗口长度。CpG 岛常出现在脊椎动物基因的 5' 区域，因此本程序可用于在基因组序列中标记可能的基因。",
-
   // dna_mw.html
   "DNA Molecular Weight":
     "DNA 分子量",
@@ -359,7 +347,6 @@ window.SMS_I18N_ZH = {
     "环状",
   "molecules.":
     "分子。",
-
   // iupac.html
   "IUPAC codes":
     "IUPAC 编码",
@@ -367,7 +354,6 @@ window.SMS_I18N_ZH = {
     "DNA：",
   "Protein:":
     "蛋白质：",
-
   // genetic_code.html
   "Genetic codes":
     "遗传密码表",
@@ -409,7 +395,6 @@ window.SMS_I18N_ZH = {
     "*此处省略了部分编号，以使这些编码与",
   "genetic codes used by NCBI":
     "NCBI 使用的遗传密码保持一致",
-
   // codon_plot.html
   "Codon Plot":
     "密码子图谱",
@@ -417,7 +402,6 @@ window.SMS_I18N_ZH = {
     "密码子图谱接受一条 DNA 序列，为每个密码子生成一个水平条形，构成图形化图谱。条形的长度与您所输入的密码子频率表中该密码子的频率成正比。可用密码子图谱找出 DNA 序列中可能表达不良的区段，或查看密码子使用表的图形表示（方法是使用由每种密码子各一个组成的 DNA 序列）。",
   "Paste the raw or FASTA sequence into the text area below. Input limit is 50,000,000 characters.":
     "请将原始序列或 FASTA 序列粘贴到下面的文本框中。输入上限为 50,000,000 个字符。",
-
   // codon_usage.html
   "Codon Usage":
     "密码子使用情况",
@@ -425,7 +409,6 @@ window.SMS_I18N_ZH = {
     "密码子使用情况接受一条或多条 DNA 序列，返回每种密码子的数目和频率。由于程序还会比较编码同一氨基酸的密码子（同义密码子）的频率，您可以用它评估某条序列是否偏好特定的同义密码子。",
   "Paste the raw sequence or one or more FASTA sequences into the text area. Input limit is 500,000,000 characters.":
     "请将原始序列或一条至多条 FASTA 序列粘贴到文本框中。输入上限为 500,000,000 个字符。",
-
   // dna_pattern.html
   "DNA Pattern Find":
     "DNA 模式查找",
@@ -439,7 +422,6 @@ window.SMS_I18N_ZH = {
     "搜索模式",
   "to be used. The default pattern \"ctt[ca]\" searches for occurrences of \"cttc\" and \"ctta\".":
     "。默认模式 “ctt[ca]” 用于查找 “cttc” 和 “ctta” 的出现位置。",
-
   // group_dna.html
   "Group DNA":
     "DNA 分组",
@@ -453,7 +435,6 @@ window.SMS_I18N_ZH = {
     "反向链。",
   "Start the numbering at":
     "编号起始值为",
-
   // group_protein.html
   "Group Protein":
     "蛋白质分组",
@@ -461,7 +442,6 @@ window.SMS_I18N_ZH = {
     "蛋白质分组会调整蛋白质序列的间距并添加编号。您可以指定分组大小（每组残基数）以及每行的残基数。由于带有编号和间距，本程序的输出可作为方便的参照，便于您快速定位特定残基。",
   "and show":
     "，每行显示",
-
   // ident_sim.html
   "Ident and Sim":
     "一致性与相似性",
@@ -471,7 +451,6 @@ window.SMS_I18N_ZH = {
     "以 FASTA 或 GDE 格式粘贴到下面的文本框中。输入上限为 20,000,000 个字符。",
   "Enter the groups of similar amino acids separated by commas to be used for the similarity calculation. If you are comparing DNA sequences, leave this text area empty.":
     "请输入用于相似性计算的相似氨基酸分组，各组之间用逗号分隔。若比较的是 DNA 序列，请将此文本框留空。",
-
   // multi_rev_trans.html
   "Multi Rev Trans":
     "批量反向翻译",
@@ -479,7 +458,6 @@ window.SMS_I18N_ZH = {
     "批量反向翻译接受一份蛋白质比对结果，并使用密码子使用表生成简并 DNA 编码序列。程序还会返回一张图，可用于在核苷酸水平上找出简并度最低的区域。在设计 PCR 引物、以便与来自近缘物种的未测序编码序列退火时，可使用批量反向翻译。",
   "Paste the protein alignment in FASTA or GDE format into the text area below. Input limit is 20,000,000 characters.":
     "请将 FASTA 或 GDE 格式的蛋白质比对结果粘贴到下面的文本框中。输入上限为 20,000,000 个字符。",
-
   // orf_find.html
   "ORF Finder":
     "ORF 查找",
@@ -497,15 +475,12 @@ window.SMS_I18N_ZH = {
     "，链方向为",
   "direct":
     "正向",
-  "reverse":
-    "反向",
   "strand.":
     "链。",
   "Only return ORFs that are at least":
     "仅返回长度至少为",
   "codons long.":
     "个密码子的 ORF。",
-
   // fuzzy_search_dna.html, fuzzy_search_protein.html
   "Fuzzy Search DNA":
     "DNA 模糊搜索",
@@ -521,7 +496,6 @@ window.SMS_I18N_ZH = {
     "请在下面的文本框中输入要搜索的序列（原始序列或 FASTA 格式）。输入上限为 2000 个字符。",
   "Enter the query sequence into the text area below. Input limit is 30 characters.":
     "请在下面的文本框中输入查询序列。输入上限为 30 个字符。",
-
   // fuzzy_search_dna.html
   "Match value":
     "匹配分值",
@@ -529,13 +503,11 @@ window.SMS_I18N_ZH = {
     "错配分值",
   "Gap value":
     "空位分值",
-
   // fuzzy_search_protein.html
   "Scoring matrix":
     "打分矩阵",
   "Gap penalty":
     "空位罚分",
-
   // filter_dna.html, filter_protein.html
   "Filter DNA":
     "DNA 过滤",
@@ -573,7 +545,6 @@ window.SMS_I18N_ZH = {
     "将剩余字符转为小写",
   "don't change the case of remaining characters":
     "不改变剩余字符的大小写",
-
   // filter_dna.html
   "remove non 'gatcn' characters":
     "去除 'gatcn' 以外的字符",
@@ -591,7 +562,6 @@ window.SMS_I18N_ZH = {
     "去除的字符替换为 'u'",
   "replace removed characters with 'U'":
     "去除的字符替换为 'U'",
-
   // filter_protein.html
   "remove non 'ACDEFGHIKLMNPQRSTVWY' characters":
     "去除 'ACDEFGHIKLMNPQRSTVWY' 以外的字符",
@@ -605,7 +575,6 @@ window.SMS_I18N_ZH = {
     "去除的字符替换为 'x'",
   "replace removed characters with 'X'":
     "去除的字符替换为 'X'",
-
   // mutate_dna.html, mutate_protein.html
   "Mutate DNA":
     "DNA 突变",
@@ -621,7 +590,6 @@ window.SMS_I18N_ZH = {
     "蛋白质突变会向蛋白质序列中引入残基改变。您可以选择引入的突变数目，以及是否保留序列中的第一个残基，以反映维持起始密码子的选择压力。每个突变的位置随机选取，同一位置可能发生多个突变。突变后的序列可用于评估序列分析结果的显著性。",
   "The first residue in each sequence":
     "每条序列的第一个残基",
-
   // mutate_for_digest.html
   "Mutate for Digest":
     "为酶切引入突变",
@@ -639,7 +607,6 @@ window.SMS_I18N_ZH = {
     "大写字母",
   "none":
     "无",
-
   // mirror.html
   "Download":
     "下载",
@@ -661,7 +628,6 @@ window.SMS_I18N_ZH = {
     "在本地运行序列操作套件：",
   "and load index.html from the html directory into a web browser.":
     "，并用网页浏览器打开 html 目录中的 index.html。",
-
   // color_align_cons.html
   "Color Align Conservation":
     "着色比对（保守性）",
@@ -669,13 +635,11 @@ window.SMS_I18N_ZH = {
     "着色比对（保守性）接受一组比对后的序列（FASTA 或 GDE 格式）并为其着色。程序逐个检查残基，并与同一列中的其他残基比较：各序列中相同的残基使用黑色底色，相似的残基使用灰色底色，其余残基使用白色底色。您可以指定应用着色所需的相同与相似残基比例。可用着色比对（保守性）增强序列比对程序的输出效果。",
   "Enter the groups of similar amino acids separated by commas to be used for the similarity calculation. If you are coloring a DNA alignment, leave this text area empty.":
     "请输入用于相似性计算的相似氨基酸分组，各组之间用逗号分隔。若为 DNA 比对着色，请将此文本框留空。",
-
   // color_align_prop.html
   "Color Align Properties":
     "着色比对（理化性质）",
   "Color Align Properties accepts a group of aligned sequences (in FASTA or GDE format) and colors the alignment. The program examines each residue and compares it to the other residues in the same column. Residues that are identical or similar among the sequences are given a colored background. The color is chosen according to the biochemical properties of the residue. You can specify the percentage of residues that must be identical and similar for the coloring to be applied. Use Color Align Properties to highlight protein regions with conserved biochemical properties.":
     "着色比对（理化性质）接受一组比对后的序列（FASTA 或 GDE 格式）并为其着色。程序逐个检查残基，并与同一列中的其他残基比较：各序列中相同或相似的残基使用彩色底色，颜色依据该残基的生化性质选择。您可以指定应用着色所需的相同与相似残基比例。可用着色比对（理化性质）突出显示生化性质保守的蛋白质区域。",
-
   // about.html
   "Sequences submitted to the Sequence Manipulation Suite do not leave your computer and are instead manipulated by your web browser, which executes the JavaScript. The Sequence Manipulation Suite was written by Paul Stothard (University of Alberta, Canada). Send questions and comments to":
     "提交到序列操作套件的序列不会离开您的计算机，而是由执行 JavaScript 的网页浏览器处理。序列操作套件由 Paul Stothard（加拿大阿尔伯塔大学）编写。问题与意见请发送至",
@@ -874,5 +838,262 @@ window.SMS_I18N_ZH = {
   "- randomly shuffles a DNA sequence. Shuffled sequences can be used to evaluate the significance of sequence analysis results, particularly when sequence composition is an important consideration.":
     "- 随机洗牌一条 DNA 序列。洗牌后的序列可用于评估序列分析结果的显著性，尤其当序列组成是重要考虑因素时。",
   "- randomly shuffles a protein sequence. Shuffled sequences can be used to evaluate the significance of sequence analysis results, particularly when sequence composition is an important consideration.":
-    "- 随机洗牌一条蛋白质序列。洗牌后的序列可用于评估序列分析结果的显著性，尤其当序列组成是重要考虑因素时。"
+    "- 随机洗牌一条蛋白质序列。洗牌后的序列可用于评估序列分析结果的显著性，尤其当序列组成是重要考虑因素时。",
+  // ===== Stage 2B pages (pairwise_align_* … window_extract_protein) =====
+  // Shared option labels and genetic code names
+  "Gap opening penalty": "空位开启罚分",
+  "Gap extension penalty": "空位延伸罚分",
+  "Obtain bases from the": "从以下链获取碱基：",
+  "Sequence segments should be returned as": "序列片段应以以下形式返回：",
+  "a new sequence": "一条新序列",
+  "separate FASTA records": "分开的 FASTA 记录",
+  "uppercased text": "大写文本",
+  "lowercased text": "小写文本",
+  // pairwise_align_codons.html
+  "Pairwise Align Codons accepts two coding DNA sequences and determines the optimal global pairwise alignment at the codon level using an affine gap penalty model. Alignment is scored using the empirical codon substitution matrix of":
+    "密码子两两比对接受两条编码 DNA 序列，并使用仿射空位罚分模型在密码子水平上确定最优的全局两两比对。比对打分采用",
+  "Schneider et al. (2005)": "Schneider 等 (2005)",
+  "(BMC Bioinformatics 6:134), which assigns log-odds scores to all 64×64 codon pairs based on observed substitution frequencies across aligned protein families. Gaps are represented as triplets (---) to preserve codon structure. Only the bases A, C, G, T, and U are accepted; U is treated as T. Input sequences must be divisible by 3.":
+    "（BMC Bioinformatics 6:134）中的经验密码子替换矩阵，该矩阵根据已比对蛋白质家族中观察到的替换频率，为全部 64×64 个密码子对赋予对数几率打分。空位以三联体 (---) 表示，以保持密码子结构。仅接受 A、C、G、T 和 U 五种碱基；U 按 T 处理。输入序列长度必须能被 3 整除。",
+  "Paste sequence one (in raw sequence or FASTA format) into the text area below. Input limit is 20,000 characters.":
+    "请将序列一（原始序列或 FASTA 格式）粘贴到下面的文本框中。输入上限为 20,000 个字符。",
+  "Paste sequence two (in raw sequence or FASTA format) into the text area below. Input limit is 20,000 characters.":
+    "请将序列二（原始序列或 FASTA 格式）粘贴到下面的文本框中。输入上限为 20,000 个字符。",
+  "Use the following parameters to specify how alignments are scored.":
+    "使用以下参数指定比对打分方式。",
+  // pairwise_align_dna.html
+  "Pairwise Align DNA accepts two DNA sequences and determines the optimal global alignment with affine gap penalties and the EDNAFULL DNA scoring matrix. Use Pairwise Align DNA to look for conserved sequence regions.":
+    "DNA 两两比对接受两条 DNA 序列，并使用仿射空位罚分与 EDNAFULL DNA 打分矩阵确定最优的全局比对。可用 DNA 两两比对查找保守序列区域。",
+  "DNA alignments use the EDNAFULL scoring matrix.":
+    "DNA 比对使用 EDNAFULL 打分矩阵。",
+  // pairwise_align_protein.html
+  "Pairwise Align Protein accepts two protein sequences and determines the optimal global alignment with affine gap penalties. Use Pairwise Align Protein to look for conserved sequence regions.":
+    "蛋白质两两比对接受两条蛋白质序列，并使用仿射空位罚分确定最优的全局比对。可用蛋白质两两比对查找保守序列区域。",
+  // pcr_primer_stats.html
+  "PCR Primer Stats accepts a list of PCR primer sequences and returns a report describing the properties of each primer, including melting temperature, percent GC content, and PCR suitability. Use PCR Primer Stats to evaluate potential PCR primers.":
+    "PCR 引物统计接受一组 PCR 引物序列，并返回描述每条引物性质的报告，包括解链温度、GC 含量百分比以及 PCR 适用性。可用 PCR 引物统计评估候选的 PCR 引物。",
+  "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 5,000,000 characters. The maximum accepted primer length is 50 bases.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 5,000,000 个字符。可接受的引物最大长度为 50 个碱基。",
+  // pcr_products.html
+  "PCR Test": "PCR 测试",
+  "PCR Products accepts one or more DNA sequence templates and two primer sequences. The program searches for perfectly matching primer annealing sites that can generate a PCR product. Any resulting products are sorted by size, and they are given a title specifying their length, their position in the original sequence, and the primers that produced them. You can use linear or circular molecules as the template. Use PCR Products to determine the product sizes you can expect to see when you perform PCR in the lab.":
+    "PCR 产物接受一条或多条 DNA 序列模板以及两条引物序列。程序会搜索能够产生 PCR 产物的完全匹配的引物退火位点。所有产物按大小排序，标题中给出其长度、在原始序列中的位置以及产生该产物的引物。模板可使用线性或环状分子。可用 PCR 产物预测实验室中进行 PCR 时可能出现的产物大小。",
+  "Enter the name of the first primer, followed by its sequence in the 5' to 3' direction. Degenerate sites can be represented using IUPAC DNA characters.":
+    "请输入第一条引物的名称，随后是其 5' 至 3' 方向的序列。简并位点可用 IUPAC DNA 字符表示。",
+  "Enter the name of the second primer, followed by its sequence in the 5' to 3' direction. Degenerate sites can be represented using IUPAC DNA characters.":
+    "请输入第二条引物的名称，随后是其 5' 至 3' 方向的序列。简并位点可用 IUPAC DNA 字符表示。",
+  // primer_map.html
+  "Primer Map accepts a DNA sequence and returns a textual map showing the annealing positions of PCR primers. Restriction endonuclease cut sites, and the protein translations of the DNA sequence can also be shown. Use this program to produce a useful reference figure, particularly when you have designed a large number of primers for a particular template. Primer Map supports the entire IUPAC alphabet and several genetic codes.":
+    "引物图谱接受一条 DNA 序列，并返回标出 PCR 引物退火位置的文本图谱。也可显示限制性内切酶切割位点以及该 DNA 序列的蛋白质翻译。当您为某个模板设计了大量引物时，可用本程序生成实用的参考图。引物图谱支持完整的 IUPAC 字母表和多种遗传密码。",
+  "Paste a raw sequence or one or more FASTA sequences into the text area below. Input limit is 200,000,000 characters.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 200,000,000 个字符。",
+  "Enter the primers you want to display. An example primer entry is:":
+    "请输入要显示的引物。引物条目示例：",
+  ". The round brackets surround the name of the primer, and the sequence is written in the 5' to 3' direction. Multiple entries are separated by commas.":
+    "。圆括号内为引物名称，序列按 5' 至 3' 方向书写。多条条目之间用逗号分隔。",
+  "Restriction sites should": "限制性酶切位点",
+  "be shown": "显示",
+  "not be shown": "不显示",
+  "Generate": "生成",
+  "color": "彩色",
+  "black and white": "黑白",
+  "output.": "输出。",
+  // protein_gravy.html
+  "Protein GRAVY returns the GRAVY (grand average of hydropathy) value for the protein sequences you enter. The GRAVY value is calculated by adding the hydropathy value for each residue and dividing by the length of the sequence (":
+    "蛋白质平均疏水性返回您输入的蛋白质序列的 GRAVY（总平均疏水性）值。GRAVY 值的计算方法是：将每个残基的疏水性值相加，再除以序列长度（",
+  "Kyte and Doolittle; 1982": "Kyte 与 Doolittle；1982",
+  // protein_iep.html
+  "Protein Isoelectric Point calculates the theoretical pI (isoelectric point) for the protein sequence you enter. Use Protein Isoelectric Point when you want to know approximately where on a 2-D gel a particular protein will be found.":
+    "蛋白质等电点计算您输入的蛋白质序列的理论 pI（等电点）。当您想大致了解某种蛋白质在 2-D 凝胶上的位置时，可使用蛋白质等电点。",
+  "Add": "添加",
+  "copies of": "份",
+  "Nothing": "无",
+  "to each sequence.": "到每条序列。",
+  "Use pK values from": "pK 值来源：",
+  // protein_mw.html
+  "Protein Molecular Weight accepts one or more protein sequences and calculates molecular weight. You can append copies of commonly used epitopes and fusion proteins using the supplied list. Use Protein Molecular Weight when you wish to predict the location of a protein of interest on a gel in relation to a set of protein standards.":
+    "蛋白质分子量接受一条或多条蛋白质序列并计算分子量。您可以使用提供的列表为序列附加常用的表位和融合蛋白拷贝。当您想预测目标蛋白在凝胶上相对于一组蛋白质标准品的位置时，可使用蛋白质分子量。",
+  // protein_pattern.html
+  "Protein Pattern Find accepts one or more sequences along with a search pattern and returns the number and positions of sites that match the pattern. Use Protein Pattern Find to locate sequence regions that match a consensus sequence of interest.":
+    "蛋白质模式查找接受一条或多条序列以及一个搜索模式，返回与该模式匹配的位点数目和位置。可用蛋白质模式查找定位与感兴趣的共有序列相匹配的序列区域。",
+  "to be used. The default pattern \"S[^S]{0,5}S\" searches for occurrences of two serine residues less than or equal to 5 residues apart.":
+    "。默认模式 \"S[^S]{0,5}S\" 用于搜索两个相隔不超过 5 个残基的丝氨酸残基的出现位置。",
+  // protein_stats.html
+  "Protein Stats returns the number of occurrences of each residue in the sequence you enter. Percentage totals are also given for each residue, and for certain groups of residues, allowing you to quickly compare the results obtained for different sequences.":
+    "蛋白质统计返回您输入的序列中每种残基的出现次数。同时给出每种残基以及若干残基组的百分比总计，便于快速比较不同序列的结果。",
+  // random_coding_dna.html
+  "Random Coding DNA generates a random open reading frame beginning with a start codon and ending with a stop codon. You can choose the genetic code to use and the length of the sequence to generate. Random sequences can be used to evaluate the significance of sequence analysis results.":
+    "随机编码 DNA 生成一个以起始密码子开始、以终止密码子结束的随机开放阅读框。您可以选择所用的遗传密码以及要生成的序列长度。随机序列可用于评估序列分析结果的显著性。",
+  "Enter the length of the sequence (in codons) in the text area below. Maximum accepted value is 4,000,000.":
+    "请在下面的文本框中输入序列长度（以密码子计）。可接受的最大值为 4,000,000。",
+  "Number of random sequences to generate:": "要生成的随机序列数：",
+  // random_dna.html / random_dna_regions.html
+  "Random DNA Sequence generates a random sequence of the length you specify. Random sequences can be used to evaluate the significance of sequence analysis results.":
+    "随机 DNA 序列按您指定的长度生成一条随机序列。随机序列可用于评估序列分析结果的显著性。",
+  "Enter the length of the sequence in the text area below. Maximum accepted value is 10,000,000.":
+    "请在下面的文本框中输入序列长度。可接受的最大值为 10,000,000。",
+  "Random DNA Regions replaces regions of a DNA sequence with random bases. Random sequences can be used to evaluate the significance of sequence analysis results.":
+    "随机 DNA 区域用随机碱基替换 DNA 序列中的指定区域。随机序列可用于评估序列分析结果的显著性。",
+  "Enter the base positions or ranges of interest. Use \"..\" or \"-\" to represent a range, and use a comma to separate entries.":
+    "请输入关注的碱基位置或范围。使用 \"..\" 或 \"-\" 表示范围，各条目之间用逗号分隔。",
+  "The above ranges should be": "上述范围",
+  "replaced with random bases": "在随机化过程中替换为随机碱基",
+  "preserved": "在随机化过程中保持不变",
+  "during the randomization process.": "。",
+  // random_protein.html / random_protein_regions.html
+  "Random Protein Sequence generates a random sequence of the length you specify. Random sequences can be used to evaluate the significance of sequence analysis results.":
+    "随机蛋白质序列按您指定的长度生成一条随机序列。随机序列可用于评估序列分析结果的显著性。",
+  "Random Protein Regions replaces regions of a protein sequence with random residues. Random sequences can be used to evaluate the significance of sequence analysis results.":
+    "随机蛋白质区域用随机残基替换蛋白质序列中的指定区域。随机序列可用于评估序列分析结果的显著性。",
+  "replaced with random residues": "在随机化过程中替换为随机残基",
+  // range_extract_dna.html
+  "Paste a raw sequence or one or more FASTA sequences into the text area below. Input limit is 500,000,000 characters.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 500,000,000 个字符。",
+  "Range Extractor DNA accepts a DNA sequence along with a set of positions or ranges. The bases corresponding to the positions or ranges are returned, either as a single new sequence, a set of FASTA records, as uppercase text, or as lowercase text. Use Range Extractor DNA to obtain subsequences using position information.":
+    "DNA 区域提取接受一条 DNA 序列以及一组位置或范围，返回这些位置或范围对应的碱基，可以是一条新序列、一组 FASTA 记录，也可以是大写或小写文本。可用 DNA 区域提取根据位置信息获取子序列。",
+  "Enter the base positions or ranges to be extracted. Use \"..\" to represent a range, and use a comma to separate entries. The words 'start', 'end', 'center', and 'length' can be used in place of digits, to represent the beginning, end, middle, and length of the sequence. Arithmetic expressions can be included in the ranges. For example, to obtain the last three bases of a sequence, the range '(end - 2)..end' can be used. To obtain the 30 bases on either side of the center base along with the center base, the ranges '(center - 30)..(center - 1), center, (center + 1)..(center + 30)' can be used.":
+    "请输入要提取的碱基位置或范围。使用 \"..\" 表示范围，各条目之间用逗号分隔。可用单词 'start'、'end'、'center' 和 'length' 代替数字，分别表示序列的开头、结尾、中间和长度。范围中可以包含算术表达式。例如，要获取序列的最后三个碱基，可使用范围 '(end - 2)..end'；要获取中心碱基两侧各 30 个碱基以及中心碱基本身，可使用范围 '(center - 30)..(center - 1), center, (center + 1)..(center + 30)'。",
+  // range_extract_protein.html
+  "Range Extractor Protein accepts a protein sequence along with a set of positions or ranges. The residues corresponding to the positions or ranges are returned, either as a single new sequence, a set of FASTA records, as uppercase text, or as lowercase text. Use Range Extractor Protein to obtain subsequences using position information.":
+    "蛋白质区域提取接受一条蛋白质序列以及一组位置或范围，返回这些位置或范围对应的残基，可以是一条新序列、一组 FASTA 记录，也可以是大写或小写文本。可用蛋白质区域提取根据位置信息获取子序列。",
+  "Enter the residue positions or ranges to be extracted. Use \"..\" to represent a range, and use a comma to separate entries. The words 'start', 'end', 'center', and 'length' can be used in place of digits, to represent the beginning, end, middle, and length of the sequence. Arithmetic expressions can be included in the ranges. For example, to obtain the last three residues of a sequence, the range '(end - 2)..end' can be used. To obtain the 30 bases on either side of the center residue along with the center residue, the ranges '(center - 30)..(center - 1), center, (center + 1)..(center + 30)' can be used.":
+    "请输入要提取的残基位置或范围。使用 \"..\" 表示范围，各条目之间用逗号分隔。可用单词 'start'、'end'、'center' 和 'length' 代替数字，分别表示序列的开头、结尾、中间和长度。范围中可以包含算术表达式。例如，要获取序列的最后三个残基，可使用范围 '(end - 2)..end'；要获取中心残基两侧各 30 个碱基以及中心残基本身，可使用范围 '(center - 30)..(center - 1), center, (center + 1)..(center + 30)'。",
+  // reference.html
+  "Reference": "参考文献",
+  "Questions? Comments? Contact Paul Stothard at": "有问题或意见？请联系 Paul Stothard：",
+  // rest_digest.html
+  "Restriction Digest cleaves a DNA sequence in a virtual restriction digest, with one, two, or three restriction enzymes. The resulting fragments are sorted by size, and they are given a title specifying their length, their position in the original sequence, and the enzyme sites that produced them. You can digest linear or circular molecules, and even a mixture of molecules (by entering more than one sequence in FASTA format). Use Restriction Digest to determine the fragment sizes you will see when you perform a digest in the lab.":
+    "限制性酶切使用一种、两种或三种限制性内切酶对 DNA 序列进行虚拟酶切。所得片段按大小排序，标题中给出其长度、在原始序列中的位置以及产生它们的酶切位点。您可以酶切线性或环状分子，甚至可以酶切分子混合物（以 FASTA 格式输入多条序列）。可用限制性酶切预测实验室中进行酶切时看到的片段大小。",
+  "Digest with": "使用以下酶进行酶切：",
+  "and": "、",
+  "nothing": "无",
+  // rest_map.html
+  "Restriction Map accepts a DNA sequence and returns a textual map showing the positions of restriction endonuclease cut sites. The translation of the DNA sequence is also given, in the reading frame you specify. Use the output of this program as a reference when planning cloning strategies. Restriction Map supports the entire IUPAC alphabet and several genetic codes.":
+    "限制性酶切图谱接受一条 DNA 序列，返回标出限制性内切酶切割位点位置的文本图谱。同时按您指定的阅读框给出该 DNA 序列的翻译。规划克隆策略时，可用本程序的输出作为参考。限制性酶切图谱支持完整的 IUPAC 字母表和多种遗传密码。",
+  "Paste a raw sequence or one or more FASTA sequences into the text area below. Input limit is 100,000,000 characters.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 100,000,000 个字符。",
+  // rest_summary.html
+  "Restriction Summary accepts a DNA sequence and returns the number and positions of commonly used restriction endonuclease cut sites. Use this program if you wish to quickly determine whether or not an enzyme cuts a particular segment of DNA.":
+    "限制性酶切汇总接受一条 DNA 序列，返回常用限制性内切酶切割位点的数目和位置。若想快速判断某种酶是否切割某段 DNA，可使用本程序。",
+  // rev_trans.html
+  "Reverse Translate accepts a protein sequence as input and uses a codon usage table to generate a DNA sequence representing the most likely non-degenerate coding sequence. A consensus sequence derived from all the possible codons for each amino acid is also returned. Use Reverse Translate when designing PCR primers to anneal to an unsequenced coding sequence from a related species.":
+    "反向翻译接受蛋白质序列作为输入，并使用密码子使用表生成一条 DNA 序列，代表最可能的非简并编码序列。同时返回由每种氨基酸所有可能密码子推导出的共有序列。在设计 PCR 引物以退火到近缘物种尚未测序的编码序列时，可使用反向翻译。",
+  "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 20,000,000 characters.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 20,000,000 个字符。",
+  // sample_dna.html / sample_protein.html
+  "Sample DNA randomly selects bases from the guide sequence until a sequence of the length you specify is constructed. Each selected base is replaced so that it can be selected again.":
+    "DNA 抽样从引导序列中随机选取碱基，直到构建出您指定长度的序列。每次选中的碱基会被放回，因此可被再次选中。",
+  "Enter the length of the sequence you wish to construct. Maximum accepted value is 10,000,000.":
+    "请输入您要构建的序列长度。可接受的最大值为 10,000,000。",
+  "Paste the raw or FASTA guide sequence into the text area below. Input limit is 10,000,000 characters.":
+    "请将原始或 FASTA 格式的引导序列粘贴到下面的文本框中。输入上限为 10,000,000 个字符。",
+  "Number of sequences to generate:": "要生成的序列数：",
+  "Sample Protein randomly selects residues from the guide sequence until a sequence of the length you specify is constructed. Each selected residue is replaced so that it can be selected again.":
+    "蛋白质抽样从引导序列中随机选取残基，直到构建出您指定长度的序列。每次选中的残基会被放回，因此可被再次选中。",
+  // search_patterns.html
+  "Search patterns": "搜索模式",
+  "The search patterns used by the Sequence Manipulation Suite are not case sensitive. The following is a simple search pattern that will find all occurrences of the sequence fragment":
+    "序列操作套件使用的搜索模式不区分大小写。下面是一个简单的搜索模式，可找出序列片段",
+  "(and": "（以及",
+  "):": "）：",
+  "The above will match": "以上模式将匹配",
+  "but not": "但不匹配",
+  "Sequences containing residues that vary at a particular position can be matched using square brackets. The following pattern will find all occurrences of":
+    "若序列在某些位置上残基可变，可用方括号进行匹配。下面的模式将找出以下各项的所有出现位置：",
+  ",": "、",
+  ", and": "、",
+  ":": "：",
+  "To represent a completely variable residue in a pattern, use the":
+    "要在模式中表示完全可变的残基，请使用",
+  "character. The following pattern will find all occurrences of":
+    "字符。下面的模式将找出以下各项的所有出现位置：",
+  "followed by any single residue, followed by": "后跟任意单个残基，再后跟",
+  "To indicate that a residue can be repeated one or more times in a sequence, use the":
+    "要表示某残基在序列中可重复一次或多次，请使用",
+  "followed by one or more": "后跟一个或多个",
+  "residues:": "残基：",
+  "To indicate that a residue can be repeated zero or more times in a sequence, use the":
+    "要表示某残基在序列中可重复零次或多次，请使用",
+  "followed by zero or more": "后跟零个或多个",
+  "residues, followed by an": "残基，再后跟一个",
+  "To indicate that a residue can be repeated a specific number of times, use curly parentheses. The following pattern will find all occurrences of an":
+    "要表示某残基重复特定次数，请使用花括号。下面的模式将找出一个",
+  "residue, followed by between one and four": "残基的所有出现位置：该残基后跟一至四个",
+  "residues, followed by a": "残基，再后跟一个",
+  "residue:": "残基：",
+  "The special characters, brackets, and curly parentheses in the above examples allow repeated residues to be found. You can find repeated sub-sequences using regular parentheses in combination with the":
+    "上述示例中的特殊字符、方括号和花括号可用于查找重复残基。将普通圆括号与",
+  "characters. The following pattern will find all occurrences of two to 5":
+    "字符组合使用，即可查找重复的子序列。下面的模式将找出连续出现的两到 5 个",
+  "sequences in a row, followed by one or more": "序列，后跟一个或多个",
+  "repeats:": "重复：",
+  "To restrict matches to the beginning of a sequence, use the":
+    "要将匹配限制在序列开头，请使用",
+  "character. For example, the following pattern will find":
+    "字符。例如，下面的模式将找出",
+  "only if it is within three residues of the sequence start:":
+    "（仅当其位于序列起始三个残基之内）：",
+  "The above will find": "以上模式将找到",
+  "in the sequence": "（位于序列",
+  "but not in the sequence": "），但不在序列",
+  "To restrict matches to the end of a sequence, use the":
+    "要将匹配限制在序列末尾，请使用",
+  "only if it is located at the end of a sequence:":
+    "（仅当其位于序列末尾时）：",
+  "To find variable sequences, you can also use the": "要查找可变序列，还可以使用",
+  "character to separate patterns for the different versions of the sequence segment you want to find. For example, to find all occurrences of":
+    "字符来分隔要查找的序列片段的不同版本模式。例如，要找出",
+  "you could use the following:": "的所有出现位置，可以使用以下模式：",
+  "Other examples:": "其他示例：",
+  "The above will match open reading frames that start with":
+    "以上模式将匹配开放阅读框：以",
+  "and end with": "起始，并以以下任一密码子结束：",
+  ", or": "，或",
+  "The above will match stretches of proteins containing ten or more hydrophobic residues.":
+    "以上模式将匹配含有十个或更多疏水残基的蛋白质片段。",
+  // shuffle_dna.html / shuffle_protein.html
+  "Shuffle DNA randomly shuffles a DNA sequence. Shuffled sequences can be used to evaluate the significance of sequence analysis results, particularly when sequence composition is an important consideration.":
+    "DNA 洗牌随机重排一条 DNA 序列。重排后的序列可用于评估序列分析结果的显著性，尤其是在序列组成是重要考量时。",
+  "Paste the raw sequence or one or more FASTA sequences into the text area below. Input limit is 300,000,000 characters.":
+    "请将原始序列或一条至多条 FASTA 序列粘贴到下面的文本框中。输入上限为 300,000,000 个字符。",
+  "Shuffle Protein randomly shuffles a protein sequence. Shuffled sequences can be used to evaluate the significance of sequence analysis results, particularly when sequence composition is an important consideration.":
+    "蛋白质洗牌随机重排一条蛋白质序列。重排后的序列可用于评估序列分析结果的显著性，尤其是在序列组成是重要考量时。",
+  // split_codons.html
+  "Split Codons divides a coding sequence into three new sequences, each consisting of the bases from one of the three codon positions. For example, the sequence \"ATGATGATG\" is converted to \"AAA\", \"TTT\", and \"GGG\". Split Codons can be useful when you wish to analyze codon positions separately in downstream analyses.":
+    "密码子拆分将一条编码序列分成三条新序列，每条由三个密码子位置之一上的碱基组成。例如，序列 \"ATGATGATG\" 会转换为 \"AAA\"、\"TTT\" 和 \"GGG\"。当您希望在后续分析中分别分析各密码子位置时，密码子拆分很有用。",
+  "Paste the FASTA coding sequences into the text area below. Input limit is 500,000,000 characters.":
+    "请将 FASTA 编码序列粘贴到下面的文本框中。输入上限为 500,000,000 个字符。",
+  // split_fasta.html
+  "Split FASTA divides FASTA sequence records into smaller FASTA sequences of the size you specify. An optional overlap value can be used to create sequences that overlap.":
+    "FASTA 拆分将 FASTA 序列记录划分为您指定大小的较小 FASTA 序列。可设置可选的重叠值以生成相互重叠的序列。",
+  "The new sequences should be": "新序列长度应为",
+  "bases long.": "个碱基。",
+  "The new sequences should overlap by": "新序列之间应重叠",
+  "bases.": "个碱基。",
+  // three_to_one.html
+  "Three to One converts three letter translations to single letter translations. Digits and blank spaces are removed automatically. Non-standard triplets are ignored.":
+    "三字母转单字母将三字母翻译转换为单字母翻译。数字和空格会自动移除。非标准三联体将被忽略。",
+  // trans_map.html
+  "Translation Map accepts a DNA sequence and returns a textual map displaying protein translations. The reading frame of the translation can be specified (1, 2, 3, or all three), or you can choose to treat uppercase text as the reading frame. Translation Map supports the entire IUPAC alphabet and several genetic codes.":
+    "翻译图谱接受一条 DNA 序列，返回显示蛋白质翻译的文本图谱。可指定翻译的阅读框（1、2、3 或全部三种），也可以选择将大写文本视为阅读框。翻译图谱支持完整的 IUPAC 字母表和多种遗传密码。",
+  // translate.html
+  "Translate accepts a DNA sequence and converts it into a protein in the reading frame you specify. Translate supports the entire IUPAC alphabet and several genetic codes.":
+    "翻译接受一条 DNA 序列，并按您指定的阅读框将其转换为蛋白质。翻译支持完整的 IUPAC 字母表和多种遗传密码。",
+  "Translate in": "翻译阅读框：",
+  "reading frame 1": "阅读框 1",
+  "reading frame 2": "阅读框 2",
+  "reading frame 3": "阅读框 3",
+  "uppercase frame": "大写框",
+  // window_extract_dna.html
+  "Window Extractor DNA accepts a DNA sequence along with a window position and window size. The bases corresponding to the window are returned, either as a new sequence, as uppercase text, or as lowercase text. Use Window Extractor DNA to obtain subsequences using position information.":
+    "DNA 窗口提取接受一条 DNA 序列以及窗口位置和窗口大小，返回该窗口对应的碱基，可以是一条新序列，也可以是大写或小写文本。可用 DNA 窗口提取根据位置信息获取子序列。",
+  "Extract a window of size": "提取一个窗口，大小",
+  "centered on": "，中心位于",
+  "ending with": "，终点位于",
+  "starting with": "，起点位于",
+  "position": "位置",
+  "Sequence windows should be returned as": "序列窗口应以以下形式返回：",
+  // window_extract_protein.html
+  "Window Extractor Protein accepts a protein sequence along with a window position and window size. The residues corresponding to the window are returned, either as a new sequence, as uppercase text, or as lowercase text. Use Window Extractor Protein to obtain subsequences using position information.":
+    "蛋白质窗口提取接受一条蛋白质序列以及窗口位置和窗口大小，返回该窗口对应的残基，可以是一条新序列，也可以是大写或小写文本。可用蛋白质窗口提取根据位置信息获取子序列。",
 };
