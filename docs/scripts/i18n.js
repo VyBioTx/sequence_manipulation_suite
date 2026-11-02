@@ -12,6 +12,10 @@
     ["zh", "\u4e2d\u6587"]
   ];
   var SKIP = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, NOSCRIPT: 1 };
+  // Literal sequence, pattern and code examples live in <p class="pre...">,
+  // which must stay byte-for-byte as written (a lone "." is a wildcard, not a
+  // full stop), so their contents are never handed to the dictionary.
+  var SKIP_CLASS = /(^|\s)(pre(_bold|_small)?|i18n-literal)(\s|$)/;
   var records = [];
   var buttons = [];
 
@@ -25,7 +29,11 @@
         if (/\S/.test(n.nodeValue)) {
           remember(n.nodeValue, textSetter(n));
         }
-      } else if (n.nodeType === 1 && !SKIP[n.nodeName]) {
+      } else if (
+        n.nodeType === 1 &&
+        !SKIP[n.nodeName] &&
+        !SKIP_CLASS.test(n.className || "")
+      ) {
         if (n.nodeName === "INPUT" && /^(button|submit|reset)$/i.test(n.type)) {
           remember(n.value, valueSetter(n));
         }
