@@ -124,3 +124,14 @@
     apply(storedLang());
   }
 })();
+
+// Register the service worker only where it can work. A missing or refused
+// registration must never break the tools, so file:// stays silent.
+(function () {
+  if (!("serviceWorker" in navigator)) return;
+  var host = location.hostname;
+  if (location.protocol !== "https:" && host !== "localhost" && host !== "127.0.0.1") {
+    return;
+  }
+  navigator.serviceWorker.register("./sw.js").catch(function () {});
+})();
