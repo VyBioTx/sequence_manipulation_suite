@@ -3,6 +3,7 @@
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import vm from "node:vm";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const docsDir = path.join(repoRoot, "docs");
@@ -72,6 +73,36 @@ for (const page of pages) {
 }
 if (noManifest.length) failures.push(`no manifest link: ${noManifest.join(", ")}`);
 if (noRegister.length) failures.push(`no service worker registration: ${noRegister.join(", ")}`);
+
+// Loads i18n.js the way a page would, so the file:// guard is exercised too.
+const i18nSource = readFileSync(path.join(docsDir, "scripts", "i18n.js"), "utf8");
+function registeredAt(protocol, hostname) {
+  let url;
+  vm.runInNewContext(i18nSource, {
+    window: {},
+    document: { body: null, title: "" },
+    location: { protocol, hostname },
+    navigator: { serviceWorker: { register: (u) => ((url = u), Promise.resolve()) } }
+  });
+  return url;
+}
+for (const [protocol, hostname, expected] of [
+  ["file:", "", undefined],
+  ["http:", "example.com", undefined],
+  ["http:", "localhost", "./sw.js"],
+  ["http:", "127.0.0.1", "./sw.js"],
+  ["https:", "example.com", "./sw.js"]
+]) {
+  let actual;
+  try {
+    actual = registeredAt(protocol, hostname);
+  } catch (error) {
+    actual = `threw ${error.message}`;
+  }
+  if (actual !== expected) {
+    failures.push(`registration at ${protocol}//${hostname}: expected ${expected}, got ${actual}`);
+  }
+}
 
 console.log(`html pages: ${pages.length}`);
 console.log(`with manifest link: ${pages.length - noManifest.length}`);
