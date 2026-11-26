@@ -4,7 +4,7 @@
 
 ## 缩写（不翻译，保持原样）
 
-DNA、RNA、ORF、EMBL、GenBank、FASTA、IUPAC、PCR、CpG、GRAVY、SMS3，以及序列格式名、氨基酸单/三字母代码。
+DNA、RNA、ORF、EMBL、GenBank、FASTA、IUPAC、PCR、CpG、GRAVY，以及序列格式名、氨基酸单/三字母代码。
 
 ## 术语统一译法
 

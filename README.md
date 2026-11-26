@@ -2,13 +2,20 @@
 
 A collection of simple JavaScript programs for generating, formatting, and analyzing short DNA and protein sequences. The Sequence Manipulation Suite is commonly used by molecular biologists, for teaching purposes, and for program and algorithm testing.
 
-> **New version available:** Sequence Manipulation Suite 3 (SMS3) is available at [https://paulstothard.github.io/sequence-manipulation-suite/](https://paulstothard.github.io/sequence-manipulation-suite/).
-
 ### To use the Sequence Manipulation Suite online
 
 The Sequence Manipulation Suite can be used online at [https://paulstothard.github.io/sequence\_manipulation\_suite/](https://paulstothard.github.io/sequence_manipulation_suite/).
 
-### To mirror the Sequence Manipulation Suite
+### To install the Sequence Manipulation Suite as an app
+
+The site is a progressive web app: once installed it gets its own icon and window, and it keeps working with no network connection.
+
+* Open the site in Chrome or Edge and click the install icon in the address bar; on iOS, open it in Safari, tap the share button, and choose **Add to Home Screen**.
+* Installation and off-line caching require an `https://` page or `localhost`. A public `https://` host, a local server such as `python3 -m http.server`, and an `https://` tunnel address that forwards to this machine all qualify.
+* Opening `index.html` directly from `file://` still runs every program, but such a page cannot be installed and nothing is cached for off-line use.
+* The first load precaches the whole site; later versions replace the cache automatically, so an installed copy picks up updates on the next visit.
+
+### To host the Sequence Manipulation Suite yourself
 
 * Download the Sequence Manipulation Suite:
 
@@ -18,19 +25,9 @@ git clone git@github.com:paulstothard/sequence_manipulation_suite.git
 
 or download the [latest release](https://github.com/paulstothard/sequence_manipulation_suite/releases/).
 
-* Move the contents of the `docs` directory into a directory from which your server will serve HTML files.
+* Copy the contents of the `docs` directory into a directory that your server serves over `https://`. All processing happens in the browser, so no server-side code or database is needed.
 
-### To run the Sequence Manipulation Suite locally
-
-* Download the Sequence Manipulation Suite:
-
-```bash
-git clone git@github.com:paulstothard/sequence_manipulation_suite.git
-```
-
-or download the [latest release](https://github.com/paulstothard/sequence_manipulation_suite/releases/).
-
-* Load `index.html` from the `docs` directory into a web browser.
+* To run it locally, serve the same directory over `http://localhost` (for example `python3 -m http.server -d docs`) and open `index.html`. Serving it this way, rather than opening the file directly, is what makes the app installable.
 
 ### Citation
 

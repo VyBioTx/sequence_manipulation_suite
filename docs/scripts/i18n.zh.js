@@ -86,8 +86,7 @@ window.SMS_I18N_ZH = {
   "-IUPAC codes": "IUPAC 编码",
   "-Genetic codes": "遗传密码表",
   "-Browser compatibility": "浏览器兼容性",
-  "-Mirror this site": "镜像本站",
-  "-Use this site off-line": "离线使用本站",
+  "-Install as app": "安装为应用",
   "-About this site": "关于本站",
   "-Acknowledgments": "致谢",
   "-Reference": "参考文献",
@@ -99,7 +98,6 @@ window.SMS_I18N_ZH = {
     "序列操作套件 版权所有 \u00a9 2000, 2004 Paul Stothard。问题与意见请发送至 stothard@ualberta.ca",
   "home": "首页",
   "Sequence Manipulation Suite:": "序列操作套件：",
-  "New version available:": "新版本已发布：",
   "new window": "新窗口",
   "citation": "引用",
   "Valid XHTML 1.0; Valid CSS": "XHTML 1.0 与 CSS 校验通过",
@@ -113,9 +111,8 @@ window.SMS_I18N_ZH = {
   "page for more information about individual Sequence Manipulation Suite programs.":
     "页面，了解各个序列操作套件程序的详细信息。",
   "You can easily": "您可以轻松",
-  "mirror the Sequence Manipulation Suite": "镜像序列操作套件",
-  "on your own web site, or you can use it": "到自己的网站，也可以",
-  "off-line": "离线使用",
+  "install the Sequence Manipulation Suite as an app": "把序列操作套件安装为应用",
+  "on your computer, and it keeps working off-line": "到您的电脑上，并可离线使用",
   ".": "。",
   "This version of the Sequence Manipulation Suite represents a complete re-write of the previous version. The new version is much faster and has many new features. The":
     "本版序列操作套件是对上一版的完全重写，速度更快，并新增了许多功能。",
@@ -138,13 +135,11 @@ window.SMS_I18N_ZH = {
   "*This page requires JavaScript. See": "*本页面需要 JavaScript。请参阅",
   "browser compatibility.": "浏览器兼容性。",
   "*You can": "*您可以",
-  "mirror this page": "镜像本页面",
-  "or": "或",
-  "use it off-line": "离线使用",
+  "install this suite as an app": "把本站安装为应用",
+  "or use it": "或",
+  "off-line": "离线使用",
   // ---- stage 2A: pages translated below this line ----
   // Shared page furniture
-  "Sequence Manipulation Suite 3 (SMS3)":
-    "序列操作套件 3（SMS3）",
   "Show":
     "显示",
   "Don't show":
@@ -608,8 +603,8 @@ window.SMS_I18N_ZH = {
   "none":
     "无",
   // mirror.html
-  "Download":
-    "下载",
+  "Install as app":
+    "安装为应用",
   "The Sequence Manipulation Suite. Copyright (C) 2000, 2004 Paul Stothard.":
     "序列操作套件。版权所有 (C) 2000, 2004 Paul Stothard。",
   "This program is free software; you can redistribute it and/or modify it under the terms of the":
@@ -618,16 +613,22 @@ window.SMS_I18N_ZH = {
     "（第 3 版，或您选择的任何更新版本）条款下重新分发和/或修改本程序。本程序的发布是希望它有用，但不作任何担保，也不担保适销性或特定用途的适用性。详情请参阅",
   "for more details.":
     "。",
-  "To mirror the Sequence Manipulation Suite:":
-    "镜像序列操作套件：",
-  "Download the Sequence Manipulation Suite from":
-    "从以下地址下载序列操作套件：",
-  "and place the html directory into a directory from which your server will serve HTML files.":
-    "，并将 html 目录放入您的服务器用于提供 HTML 文件的目录中。",
-  "To run the Sequence Manipulation Suite locally:":
-    "在本地运行序列操作套件：",
-  "and load index.html from the html directory into a web browser.":
-    "，并用网页浏览器打开 html 目录中的 index.html。",
+  "To install the app:":
+    "安装为应用：",
+  "Open the site in Chrome or Edge, click the install icon in the address bar, and confirm. On iOS, open the site in Safari, tap the share button, and choose Add to Home Screen.":
+    "在 Chrome 或 Edge 中打开本站，点击地址栏中的安装图标并确认。iOS 上请在 Safari 中打开本站，点击分享按钮，再选择“添加到主屏幕”。",
+  "Installation needs https or localhost:":
+    "安装需要 https 或 localhost：",
+  "The browser only allows installation and off-line caching on https:// pages and on localhost. A public https:// site, a local server such as python3 -m http.server, and an https tunnel address that forwards to this machine all count.":
+    "浏览器只在 https:// 页面和 localhost 上允许安装与离线缓存。公网 https:// 站点、本机服务（例如 python3 -m http.server），以及转发到本机的 https 内网穿透地址都满足条件。",
+  "A page opened from file:// still runs every program, but it cannot be installed and nothing is cached for off-line use.":
+    "直接以 file:// 打开的页面仍能运行全部程序，但无法安装，也不会缓存任何内容供离线使用。",
+  "To publish the Sequence Manipulation Suite on your own server:":
+    "把序列操作套件发布到自己的服务器：",
+  "Download it from":
+    "从以下地址下载：",
+  "and copy the contents of the docs directory into a directory that your server serves over https://. All processing happens in the browser, so no server-side code or database is needed.":
+    "，并把 docs 目录的内容复制到服务器以 https:// 提供访问的目录中。全部计算都在浏览器内完成，无需服务器端代码或数据库。",
   // color_align_cons.html
   "Color Align Conservation":
     "着色比对（保守性）",
