@@ -65,7 +65,10 @@ function boot(version) {
     skipWaiting: async () => (state.skipped = true),
     clients: { claim: async () => (state.claimed = true) }
   };
-  vm.runInNewContext(swSource.replace('"sms-v1"', JSON.stringify(version)), {
+  const patched = swSource.replace(/var CACHE_VERSION = "[^"]*";/, `var CACHE_VERSION = ${JSON.stringify(version)};`);
+  const overridden = /var CACHE_VERSION = "([^"]*)";/.exec(patched)?.[1] === version;
+  if (!overridden) throw new Error(`could not set CACHE_VERSION to ${version} in sw.js`);
+  vm.runInNewContext(patched, {
     self,
     caches,
     fetch: (input, init) => net.fetch(input, init),
@@ -100,9 +103,13 @@ function check(ok, message) {
   console.log(`ok - ${message}`);
 }
 
-const v1 = boot("sms-v1");
+const currentVersion = swSource.match(/var CACHE_VERSION = "([^"]*)";/)?.[1];
+if (!currentVersion) throw new Error("could not read CACHE_VERSION from sw.js");
+const nextVersion = `${currentVersion}-upgrade-test`;
+
+const v1 = boot(currentVersion);
 await v1.wait("install");
-check(stores.get("sms-v1").size > 100, `install precached ${stores.get("sms-v1").size} files`);
+check(stores.get(currentVersion).size > 100, `install precached ${stores.get(currentVersion).size} files`);
 check(v1.state.skipped, "install calls skipWaiting");
 
 const online = net.fetch;
@@ -116,11 +123,11 @@ check((await v1.fetch("https://example.com/x.js")) === undefined, "cross-origin 
 
 tag = "<!--served-by-v2-->";
 net.fetch = online;
-const v2 = boot("sms-v2");
+const v2 = boot(nextVersion);
 await v2.wait("install");
 await v2.wait("activate");
 check(v2.state.claimed, "activate calls clients.claim");
-check(JSON.stringify(await caches.keys()) === '["sms-v2"]', "activate dropped the old cache");
+check(JSON.stringify(await caches.keys()) === JSON.stringify([nextVersion]), "activate dropped the old cache");
 const fresh = await v2.fetch(base + "index.html");
 check(fresh.includes("served-by-v2"), "after the bump pages get the new files");
 

@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
-    <title>Download</title>
+    <title>Install as app</title>
     <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
     <link rel="stylesheet" href="styles/stylesheet.css" type="text/css" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -316,11 +316,7 @@
               ><br />
               <a
                 href="mirror.html"
-                >-Mirror this site</a
-              ><br />
-              <a
-                href="mirror.html"
-                >-Use this site off-line</a
+                >-Install as app</a
               ><br />
               <a
                 href="about.html"
@@ -360,18 +356,8 @@
                 </tr>
 
                 <tr>
-                  <td class="title">Download</td>
+                  <td class="title">Install as app</td>
                 </tr>
-                <!-- SMS3 NOTICE START -->
-                <tr>
-                  <td class="description">
-                    <div class="sms3_notice">
-                      <b>New version available:</b>
-                      <a href="https://paulstothard.github.io/sequence-manipulation-suite/">Sequence Manipulation Suite 3 (SMS3)</a>
-                    </div>
-                  </td>
-                </tr>
-                <!-- SMS3 NOTICE END -->
 
                 <tr>
                   <td class="description">
@@ -399,25 +385,45 @@
                       </li>
 
                       <li>
-                        <b>To mirror the Sequence Manipulation Suite:</b>
-                        Download the Sequence Manipulation Suite from
-                        <a
-                          href="https://github.com/paulstothard/sequence_manipulation_suite"
-                          >GitHub</a
-                        >
-                        and place the html directory into a directory from which
-                        your server will serve HTML files.
+                        <b>To install the app:</b>
+                        <br />
+                        Open the site in Chrome or Edge, click the install icon
+                        in the address bar, and confirm. On iOS, open the site
+                        in Safari, tap the share button, and choose Add to Home
+                        Screen.
                       </li>
 
                       <li>
-                        <b>To run the Sequence Manipulation Suite locally:</b>
-                        Download the Sequence Manipulation Suite from
+                        <b>Installation needs https or localhost:</b>
+                        <br />
+                        The browser only allows installation and off-line
+                        caching on https:// pages and on localhost. A public
+                        https:// site, a local server such as python3 -m
+                        http.server, and an https tunnel address that forwards
+                        to this machine all count.
+                      </li>
+
+                      <li>
+                        A page opened from file:// still runs every program, but
+                        it cannot be installed and nothing is cached for
+                        off-line use.
+                      </li>
+
+                      <li>
+                        <b
+                          >To publish the Sequence Manipulation Suite on your
+                          own server:</b
+                        >
+                        <br />
+                        Download it from
                         <a
                           href="https://github.com/paulstothard/sequence_manipulation_suite"
                           >GitHub</a
                         >
-                        and load index.html from the html directory into a web
-                        browser.
+                        and copy the contents of the docs directory into a
+                        directory that your server serves over https://. All
+                        processing happens in the browser, so no server-side
+                        code or database is needed.
                       </li>
                     </ul>
                     <br />
